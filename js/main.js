@@ -7,7 +7,7 @@ let btn = document.querySelector('.btn');
 let api = 'https://v6.exchangerate-api.com/v6/5734f31022db695a3627582d/latest';    //USD
 
 window.addEventListener('DOMContentLoaded',()=>{
-    fetch('../data.json')
+    fetch('data.json')
     .then(f => f.json())
     .then(data => {
         for(i=0;i<data.length;i++){
